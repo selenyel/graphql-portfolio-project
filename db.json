@@ -1,0 +1,15 @@
+{ "users" :  [
+  {"id":"0","firstName":"Selen", "lastName":"Yel Temellioglu", "age":30, "isDead":false,"companyId":"1"},
+  {"id":"1","firstName":"Burak", "lastName":"Temellioglu", "age":31, "isDead":false,"companyId":"1"},
+  {"id":"2","firstName":"ikizler", "lastName":"Temellioglu", "age":0, "isDead":true,"companyId":"0"}
+],
+"companies":[
+  {"id":"0","name":"Apple","desc":"iphone"},
+  {"id":"1","name":"Google","desc":"search"}
+],
+"children" :  [
+  {"id":"0","firstName":"Burak daugther", "lastName":"Yel Temellioglu", "age":30, "isDead":false,"userId":"1"},
+  {"id":"1","firstName":"Burak son", "lastName":"Temellioglu", "age":31, "isDead":false,"userId":"1"},
+  {"id":"2","firstName":"dead", "lastName":"Temellioglu", "age":0, "isDead":true,"userId":"0"}
+]
+}
