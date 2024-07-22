@@ -288,3 +288,16 @@ editUser:{
 ```
 - Let's call it as such :
 ![img_3.png](img_3.png)
+
+## Section 5 - The GraphQL Ecosystem
+
+- Now I want to use my GraphQL @ my Front-End application. There are JS client tools for this.
+
+| Name            | Description                                                                            | Diffuculty  |
+|-----------------|:---------------------------------------------------------------------------------------|:------------|
+| `Lokka`         | As simple as possible. Basic queries, mutations. Some simple caching.                  | Easy        |
+| `Apollo Client` | Produced by the same guse as Meteor JS. Good balance between features and complexity.  | Moderate    |
+| `Relay`         | Amazingly performance for mobile. By far the most insanely complex.                    | Hard        |
+
+
+
