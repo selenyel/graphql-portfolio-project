@@ -1,18 +1,18 @@
 # GraphQL : Optimizing RESTful API calls
-#### my-graphql-learning
+#### graphql-portfolio-project
 
 ## How to start
 `npm run dev` for nodemon to track changes on server.js
 
 `npm run json:server` for json-server (fake data server) to start (edit fake data at db.json) 
 
-
+<sub><sub>Open both in different command prompts/terminals</sub></sub> 
 
 Links :
 
 [Tutorials Point](https://www.tutorialspoint.com/graphql/graphql_introduction.htm)
 
-[Udemy](https://www.udemy.com/course/graphql-with-react-course/learn/lecture/6515072#overview)
+[Udemy - Stephen Grider](https://www.udemy.com/course/graphql-with-react-course/learn/lecture/6515072#overview)
 
 - GraphQL is for optimizing the RESTful API calls
 - Developed by Facebook
@@ -299,5 +299,20 @@ editUser:{
 | `Apollo Client` | Produced by the same guse as Meteor JS. Good balance between features and complexity.  | Moderate    |
 | `Relay`         | Amazingly performance for mobile. By far the most insanely complex.                    | Hard        |
 
+We will use Relay on bigger projects and Apollo on rather smaller projects.
 
+> [!TIP]
+> Stephen prefers Relay on bigger and more complex projects.
 
+- In this project we used Express GraphQL instead of Apollo Client/Server
+we may see it under the package.json under the project.
+
+| GraphQL Express                                                                                      | Apollo Server                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| const CompanyType = new GraphQLObjectType({<br/>&nbsp;&nbsp;&nbsp;name:'Company', <br/>&nbsp;&nbsp;&nbsp;fields:()=>({...})<br/>}) | **Types File** <br/><br/> type User{<br/>&nbsp;&nbsp;&nbsp;id:String!, <br/>&nbsp;&nbsp;&nbsp;firstName:String, <br/>&nbsp;&nbsp;&nbsp;age:Int, <br/>&nbsp;&nbsp;&nbsp;company:Company<br/>}<br/><br/>type Company {<br/>&nbsp;&nbsp;&nbsp;id:String!, <br/>&nbsp;&nbsp;&nbsp;name:String, <br/>&nbsp;&nbsp;&nbsp;employees:[User]<br/>}<br/><br/> **Resolvers File**<br/><br/> const resolveFunctions = {<br/>&nbsp;&nbsp;Query:{<br/>&nbsp;&nbsp;&nbsp;return users,<br/>&nbsp;&nbsp;}<br/>}               |
+
+> GraphQL Express is in one place Apollo Server is more divided.
+
+# Now we will move on to the next project to view our learnings on Front-End side
+## Please go to the Lyrical-GraphQL
+[selenyel/Lyrical-GraphQL](https://github.com/selenyel/Lyrical-GraphQL)
